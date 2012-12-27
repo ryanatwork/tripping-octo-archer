@@ -25,10 +25,9 @@
 #right-container {
   max-width: 400px;
   min-height: 100%;
-  padding: 10px;
+  padding: 30px;
   color: @black;
   background-color: #f6db71;
-  opacity:0.9;
 }
 .action {
   width: 70%;
@@ -91,9 +90,11 @@ h1,h2,h3{
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 4.5em;
   padding-bottom: 5px;
   text-align: center;
+  line-height: 1em;
+  color: #000;
 }
 
 h2 {
@@ -120,6 +121,34 @@ p {
 .share li {
   display: inline-block;
 }
+
+.counter li {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 60px;
+  margin-right: 10px;
+  padding:30px 20px 10px;
+  display: inline-block;
+  background-color: black;
+  color: #f6db71;
+  font-family:"LeagueGothicRegular",Impact,Charcoal,sans-serif;
+  font-size: 4.5em;
+
+}
+.counter-text {
+  font-family:"LeagueGothicRegular",Impact,Charcoal,sans-serif;
+  font-size: 0.2em;
+  text-align: center;
+}
+
+
+.time {
+  margin: 0 auto;
+}
+
 
 .footer {
   padding-top: 30px;
