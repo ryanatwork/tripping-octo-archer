@@ -10,22 +10,23 @@
 }
 
 #left-container {
-  padding: 30px 0;
-  text-alignt: center;
+  margin-right:200px;
 }
+
 
 #left-container h1 {
   font-family:"LeagueGothicRegular",Impact,Charcoal,sans-serif;
-  font-size: 8em;
+  font-size: 7em;
   text-transform: uppercase;
   color: @black;
+  text-align: none;
 }
 
 
 #right-container {
   max-width: 400px;
-  min-height: 100%;
   padding: 30px;
+
   color: @black;
   background-color: #f6db71;
 }
@@ -113,7 +114,6 @@ p {
 }
 
 .share {
-  padding-top: 20px;
   text-align: center;
   margin: 0px;
 }
@@ -162,11 +162,11 @@ p {
   width: 62px;
   height: 62px;
   display: block;
-  background: url('../img/facebook.png');
+  background: url('../img/facebook_hover.png');
  }
 
 .facebook:hover {
-  background: url('../img/facebook_hover.png');
+  background: url('../img/facebook.png');
 
 }
 
@@ -174,11 +174,11 @@ p {
   width: 62px;
   height: 62px;
   display: block;
-  background: url('../img/twitter.png');
+  background: url('../img/twitter_hover.png');
  }
 
 .twitter:hover {
-  background: url('../img/twitter_hover.png');
+  background: url('../img/twitter.png');
 
 }
 
@@ -186,12 +186,11 @@ p {
   width: 62px;
   height:62px;
   display:block;
-  background: url('../img/email.png');
+  background: url('../img/email_hover.png');
  }
 
 .email:hover {
-  background: url('../img/email_hover.png');
-
+  background: url('../img/email.png');
 }
 
 
