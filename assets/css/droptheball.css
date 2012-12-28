@@ -26,9 +26,8 @@
 #right-container {
   max-width: 400px;
   padding: 30px;
-
   color: @black;
-  background-color: #f6db71;
+  background-color: #f6d205;
 }
 .action {
   width: 70%;
@@ -133,7 +132,7 @@ p {
   padding:30px 20px 10px;
   display: inline-block;
   background-color: black;
-  color: #f6db71;
+  color: #f6d205;
   font-family:"LeagueGothicRegular",Impact,Charcoal,sans-serif;
   font-size: 4.5em;
 
