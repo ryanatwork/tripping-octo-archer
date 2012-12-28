@@ -53,6 +53,13 @@ body {
   padding: 10px;
   text-align: center;
   line-height: 2px;
+  color: #fff;
+  background: #000;
+}
+
+.action p {
+  font-weight: bold;
+
 }
 #emailzip {
   border: 3px solid #ccc;
