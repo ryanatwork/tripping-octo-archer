@@ -39,8 +39,10 @@ body {
 #right-container {
   max-width: 400px;
   padding: 30px;
-  color: @black;
+  color: black;
   background-color: #f6d205;
+  min-height: 1100px;
+  opacity: 0.9;
 }
 .action {
   width: 70%;
@@ -159,15 +161,16 @@ p {
 
 .time {
   margin: 0 auto;
+  padding-top: 25px;
 }
 
 
 .footer {
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 .footer a {
-  color: @black;
+  color: #f6d205;
 }
 
 .facebook {
