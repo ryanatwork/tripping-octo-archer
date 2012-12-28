@@ -29,10 +29,10 @@ body {
 
 #left-container h1 {
   font-family:"LeagueGothicRegular",Impact,Charcoal,sans-serif;
-  font-size: 7em;
+  font-size: 6.5em;
   text-transform: uppercase;
   color: @black;
-  text-align: none;
+  text-align: center;
 }
 
 
@@ -127,7 +127,7 @@ p {
 
 .share {
   text-align: center;
-  margin: 0px;
+  margin: 0 auto;
 }
 
 .share li {
@@ -174,11 +174,11 @@ p {
   width: 62px;
   height: 62px;
   display: block;
-  background: url('../img/facebook_hover.png');
+  background: url('../img/facebook_black.png');
  }
 
 .facebook:hover {
-  background: url('../img/facebook.png');
+  background: url('../img/facebook_yellow.png');
 
 }
 
@@ -186,11 +186,11 @@ p {
   width: 62px;
   height: 62px;
   display: block;
-  background: url('../img/twitter_hover.png');
+  background: url('../img/twitter_black.png');
  }
 
 .twitter:hover {
-  background: url('../img/twitter.png');
+  background: url('../img/twitter_yellow.png');
 
 }
 
@@ -198,11 +198,11 @@ p {
   width: 62px;
   height:62px;
   display:block;
-  background: url('../img/email_hover.png');
+  background: url('../img/email_black.png');
  }
 
 .email:hover {
-  background: url('../img/email.png');
+  background: url('../img/email_yellow.png');
 }
 
 
