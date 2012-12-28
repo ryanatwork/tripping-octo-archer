@@ -84,13 +84,13 @@ body {
   height: 100%;
 }
 input[type="submit"] {
-  border: 6px solid #1f5ca7;
+  border: 6px solid #000;
   background: transparent;
   background-color: #fff;
   text-transform:uppercase;
   font-family:"LeagueGothicRegular",Impact,Charcoal,sans-serif;
   font-size: 3em;
-  color: #1f5ca7;
+  color: @black;
   padding: 0.5em 0.5em;
   margin: 0 auto;
   display: block;

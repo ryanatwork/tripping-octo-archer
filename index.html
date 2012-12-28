@@ -43,8 +43,21 @@
           <div id="right-container">
             <h1>Don't Drop The Ball On the Middle Class</h1>
             <div id="time1" class="time"></div>
+            <br/>
+            <p>The clock is ticking until New Year's Day, and it's time for Republicans to stop playing games with the fiscal cliff.</p>
+            <p>Tell Congress: Don't drop the ball on the middle class.</p>
+            <p>Call John Boehner and ask him to allow a vote on the middle class tax cut act before we go over the cliff.</p>
+            <p>(202) 225-0600</p>
+            <br/>
+            <form action="http://simplesender.createsend.com/t/y/s/xkykuu/" method="post" id="subForm">
+              <div id="emailzip">
+                <input type="email" pattern="[^ @]*@[^ @]*" value="" placeholder="Email Address" name="cm-xkykuu-xkykuu" id="xkykuu-xkykuu"/>
+                <input type="text" pattern="(\d{5}([\-]\d{4})?)" value="" placeholder="Zip Code" name="cm-f-bircd" id="zip_code" />
+              </div>
+              <br>
+              <input type="submit" value="Submit">
+            </form>
             <div class="action">
-              <iframe src="http://theaction.org/contact-congress" width="300" height="500" frameborder="0"></iframe>
             </div>
           </div><!--/.right -->
         </div>
@@ -55,6 +68,41 @@
         <a href="http://www.theaction.org/?page_id=277">Terms of Services</a></p>
       </div>
     </div> <!-- /container -->
+    <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Share!</h3>
+      </div>
+      <div class="modal-body">
+        <p>Like, follow, and subscribe to The Action.</p>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="row">
+          <div class="span3">
+            <div class="fb-like" data-href="http://theaction.org" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+            <br/>
+            <br/>
+            <a href="https://twitter.com/JoinTheAction" class="twitter-follow-button" data-show-count="false">Follow @JoinTheAction</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <br/>
+            <br/>
+            <a href="//www.youtube.com/subscription_center?add_user_id=qKUq8bsaYQHxasazjS1mOQ&feature=creators_cornier-//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_160x27_grey.png"><img src="//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_160x27_grey.png" alt="Subscribe to me on YouTube"/></a><img src="//www.youtube-nocookie.com/gen_204?feature=creators_cornier-//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_160x27_grey.png" style="display: none"/>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div><!-- ./modal -->
+
     <!-- Javascripts
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -62,6 +110,23 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.jscountdown.min.js"></script>
     <script src="assets/js/countdown.js"></script>
-</body>
+    <script type="text/javascript">
+     $(function () {
+       $('#subForm').submit(function (e) {
+         e.preventDefault();
+         $.getJSON(
+           this.action + "?callback=?",
+           $(this).serialize(),
+           function (data) {
+             if (data.Status === 400) {
+               alert("Error: " + data.Message);
+             } else { // 200
+              $('#myModal').modal('show')
+              }
+           });
+       });
+     });
+   </script>
+ </body>
 </html>
 
