@@ -14,11 +14,12 @@ body {
   padding-bottom: 20px;
   background-image: url('../img/background.png');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height: 1175px;
 }
 
 #left-container {
